@@ -17,3 +17,5 @@ models:
           column_name: product_id
   - name: stg_raw_circle_data__raw_cc_sales
     description: cleaning raw sales
+  - name: int_stock_sales
+    description: combination of stock and sales
