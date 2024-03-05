@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: raw_circle_data
+    description: raw data circle sportswear from lw
+    tables:
+      - name: raw_cc_stocks
+        description: stock pf products
+      - name: raw_cc_sales
+        description: sales of products
+
+models:
+  - name: sstg_raw_circle_data__raw_cc_stocks
+    description: cleaning raw stock
+    tests:
+      - unique:
+          column_name: product_id
+  - name: stg_raw_circle_data__raw_cc_sales
+    description: cleaning raw sales
