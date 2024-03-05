@@ -10,7 +10,7 @@ sources:
         description: sales of products
 
 models:
-  - name: sstg_raw_circle_data__raw_cc_stocks
+  - name: stg_raw_circle_data__raw_cc_stocks
     description: cleaning raw stock
     tests:
       - unique:
